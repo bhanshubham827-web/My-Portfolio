@@ -1,0 +1,179 @@
+/* =========================
+   GLOBAL
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f8fafc;
+  color: #0f172a;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+.app {
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f8fafc;
+}
+
+
+/* =========================
+   BACKGROUND EFFECT
+========================= */
+
+.app::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(15, 23, 42, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(15, 23, 42, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 40px 40px;
+}
+
+
+/* Soft blue glow */
+
+.app::after {
+  content: "";
+  position: fixed;
+  width: 500px;
+  height: 500px;
+
+  top: -250px;
+  right: -150px;
+
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.08);
+
+  filter: blur(100px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+
+/* Content above background */
+
+.app > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   SECTION
+========================= */
+
+section {
+  position: relative;
+}
+
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+
+/* =========================
+   COMMON CARD
+========================= */
+
+.professional-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+  transition: all 0.3s ease;
+}
+
+.professional-card:hover {
+  transform: translateY(-4px);
+  border-color: #bfdbfe;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+
+/* =========================
+   SECTION HEADING
+========================= */
+
+.section-label {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.section-description {
+  color: #64748b;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .app::before {
+    background-size: 30px 30px;
+  }
+
+  .app::after {
+    width: 300px;
+    height: 300px;
+  }
+}

@@ -1,0 +1,389 @@
+.skills-page {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    background: #ffffff;
+}
+
+/* HERO */
+
+.skills-hero {
+    padding: 45px 0 70px;
+}
+
+.skills-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: #eaf3ff;
+    color: #0d6efd;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.skills-title {
+    max-width: 700px;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.skills-title span {
+    display: block;
+    color: #0d6efd;
+}
+
+.skills-description {
+    max-width: 650px;
+    color: #6c757d;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+/* HIGHLIGHTS */
+
+.skill-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 25px;
+    margin-top: 25px;
+}
+
+.skill-highlights div {
+    color: #495057;
+    font-size: 14px;
+}
+
+.skill-highlights i {
+    margin-right: 7px;
+    color: #0d6efd;
+}
+
+
+/* VISUAL */
+
+.skills-visual {
+    position: relative;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+                filter 1s ease;
+}
+
+.skills-visual:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(0 20px 35px rgba(13, 110, 253, 0.12));
+}
+
+.code-visual {
+    width: 100%;
+    max-width: 390px;
+    padding: 20px;
+    border: 1px solid #dce9ff;
+    border-radius: 20px;
+    background: #f7faff;
+    box-shadow: 0 25px 50px rgba(13, 110, 253, 0.12);
+    transform: rotate(2deg);
+}
+
+.code-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.code-dots span {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #b6c8e5;
+}
+
+.code-content {
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    color: #495057;
+    font-family: monospace;
+    font-size: 13px;
+    line-height: 2;
+}
+
+.code-blue {
+    color: #0d6efd;
+}
+
+
+/* FLOATING ICONS */
+
+.floating-icon {
+    position: absolute;
+    z-index: 2;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background: #ffffff;
+    color: #0d6efd;
+    border: 1px solid #e1ecff;
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.12);
+    font-size: 23px;
+}
+
+.icon-one {
+    top: 25px;
+    left: 5%;
+}
+
+.icon-two {
+    top: 45%;
+    right: 0;
+}
+
+.icon-three {
+    bottom: 25px;
+    left: 12%;
+}
+
+
+/* SECTION */
+
+.skills-stack {
+    padding: 60px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: auto;
+}
+
+.section-heading > span {
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.section-heading strong {
+    color: #0d6efd;
+}
+
+.section-heading p {
+    color: #6c757d;
+}
+
+
+/* CATEGORY CARD */
+
+.category-card {
+    height: 100%;
+    padding: 28px;
+    border: 1px solid #e9ecef;
+    border-radius: 18px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+    border-color: #cfe2ff;
+    box-shadow: 0 18px 40px rgba(13, 110, 253, 0.1);
+}
+
+.category-top {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+}
+
+.category-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #eaf3ff;
+    color: #0d6efd;
+    font-size: 23px;
+}
+
+.category-card h4 {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.category-card p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* TAGS */
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.skill-tags span {
+    padding: 6px 11px;
+    border-radius: 7px;
+    background: #f1f5fa;
+    color: #495057;
+    font-size: 12px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.category-card:hover .skill-tags span {
+    background: #eaf3ff;
+    color: #0d6efd;
+}
+
+
+/* LEARNING */
+
+.learning-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        #0d6efd,
+        #4c94ff
+    );
+    color: #ffffff;
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.18);
+}
+
+.learning-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 27px;
+}
+
+.learning-section span {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.learning-section h3 {
+    margin: 5px 0;
+    font-weight: 700;
+}
+
+.learning-section p {
+    max-width: 800px;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* STATS */
+
+.skills-stats {
+    margin-top: 25px;
+}
+
+.stat-card {
+    padding: 22px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    border-radius: 14px;
+    background: #ffffff;
+}
+
+.stat-card h3 {
+    margin: 0;
+    color: #0d6efd;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.stat-card p {
+    margin: 5px 0 0;
+    color: #6c757d;
+    font-size: 12px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 991px) {
+
+    .skills-page {
+        padding-top: 100px;
+    }
+
+    .skills-hero {
+        padding-top: 30px;
+    }
+
+    .skills-visual {
+        min-height: 300px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .skills-page {
+        padding-top: 90px;
+    }
+
+    .skills-title {
+        font-size: 2.25rem;
+    }
+
+    .skills-visual {
+        min-height: 280px;
+    }
+
+    .code-content {
+        font-size: 11px;
+        padding: 15px;
+    }
+
+    .floating-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .learning-section {
+        align-items: flex-start;
+        padding: 25px 20px;
+        gap: 15px;
+    }
+
+}

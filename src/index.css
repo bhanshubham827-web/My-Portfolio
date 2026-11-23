@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Poppins", sans-serif;
+    background: #ffffff;
+    color: #212529;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+/* PAGE SELECTION */
+
+::selection {
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f8f9fa;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b8d3f5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0d6efd;
+}
+
+
+/* RESPONSIVE CONTAINER */
+
+@media (max-width: 576px) {
+
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+}
+
+
+/* ================================
+   GLOBAL PROFESSIONAL HOVER
+================================ */
+
+.hover-card,
+.category-card,
+.project-card,
+.education-card,
+.experience-card,
+.contact-info-card,
+.contact-form-card,
+.stat-card,
+.education-stat-card,
+.home-stat {
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease,
+        border-color 0.35s ease;
+}
+
+.hover-card:hover,
+.category-card:hover,
+.project-card:hover,
+.education-card:hover,
+.experience-card:hover,
+.contact-info-card:hover,
+.contact-form-card:hover,
+.stat-card:hover,
+.education-stat-card:hover,
+.home-stat:hover {
+    transform: translateY(-7px);
+    border-color: #b9d5f7;
+    box-shadow: 0 18px 40px rgba(13, 110, 253, 0.10);
+}
+
+
+/* Professional icon hover */
+
+.category-icon,
+.project-icon,
+.learning-icon,
+.company-icon,
+.contact-info-icon,
+.form-icon,
+.education-stat-card i,
+.home-stat > i {
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease,
+        color 0.35s ease;
+}
+
+.category-card:hover .category-icon,
+.project-card:hover .project-icon,
+.experience-card:hover .company-icon,
+.contact-info-item:hover .contact-info-icon,
+.contact-form-card:hover .form-icon {
+    transform: scale(1.08) rotate(-3deg);
+}
+
+
+/* Buttons */
+
+.btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.18);
+}
+
+
+/* Technology tags */
+
+.skill-tags span,
+.project-technologies span,
+.experience-technologies span {
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+}
+
+.skill-tags span:hover,
+.project-technologies span:hover,
+.experience-technologies span:hover {
+    transform: translateY(-3px);
+    background: #0d6efd;
+    color: #ffffff;
+}
+
+
+/* Links */
+
+.footer-links a,
+.contact-info-item,
+.project-footer a {
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+/* Respect reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
+

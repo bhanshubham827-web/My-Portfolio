@@ -1,0 +1,637 @@
+.experience-page {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 80px;
+    background: #ffffff;
+}
+
+
+/* HERO */
+
+.experience-hero {
+    padding: 45px 0 75px;
+}
+
+.experience-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 50px;
+    background: #eaf3ff;
+    color: #0d6efd;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.experience-title {
+    max-width: 650px;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.15;
+    font-weight: 700;
+    letter-spacing: -1.5px;
+}
+
+.experience-title span {
+    display: block;
+    color: #0d6efd;
+}
+
+.experience-description {
+    max-width: 650px;
+    color: #6c757d;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.journey-points {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 25px;
+    margin-top: 28px;
+}
+
+.journey-points div {
+    color: #495057;
+    font-size: 13px;
+}
+
+.journey-points i {
+    margin-right: 7px;
+    color: #0d6efd;
+}
+
+
+/* VISUAL */
+
+.experience-visual {
+    position: relative;
+    width: 330px;
+    height: 330px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-icon-main {
+    position: relative;
+    z-index: 3;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 28px;
+    background: #0d6efd;
+    color: #ffffff;
+    font-size: 42px;
+    box-shadow: 0 20px 45px rgba(13, 110, 253, 0.25);
+}
+
+.experience-ring {
+    position: absolute;
+    border: 1px solid #dceaff;
+    border-radius: 50%;
+}
+
+.ring-one {
+    width: 210px;
+    height: 210px;
+}
+
+.ring-two {
+    width: 300px;
+    height: 300px;
+}
+
+.floating-tech {
+    position: absolute;
+    z-index: 4;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #e1ecff;
+    border-radius: 15px;
+    background: #ffffff;
+    color: #0d6efd;
+    font-size: 21px;
+    box-shadow: 0 12px 30px rgba(13, 110, 253, 0.12);
+}
+
+.tech-one {
+    top: 15px;
+    right: 50px;
+}
+
+.tech-two {
+    bottom: 30px;
+    left: 20px;
+}
+
+.tech-three {
+    bottom: 5px;
+    right: 25px;
+}
+
+
+/* SECTION */
+
+.journey-section {
+    padding: 60px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: auto;
+}
+
+.section-heading > span {
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.section-heading h2 {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.section-heading strong {
+    color: #0d6efd;
+}
+
+.section-heading p {
+    color: #6c757d;
+    line-height: 1.7;
+}
+
+
+/* TIMELINE */
+
+.timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 60px auto 0;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #dce9fa;
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding-bottom: 45px;
+}
+
+.timeline-left {
+    padding-right: 55px;
+    text-align: right;
+}
+
+.timeline-right {
+    margin-left: 50%;
+    padding-left: 55px;
+}
+
+.timeline-number {
+    position: absolute;
+    top: 0;
+    color: #d9e7fb;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.timeline-left .timeline-number {
+    right: 15px;
+}
+
+.timeline-right .timeline-number {
+    left: 15px;
+}
+
+.timeline-dot {
+    position: absolute;
+    z-index: 3;
+    top: 8px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: #0d6efd;
+    color: #ffffff;
+    box-shadow: 0 0 0 2px #cfe2ff;
+}
+
+.timeline-left .timeline-dot {
+    right: -22px;
+}
+
+.timeline-right .timeline-dot {
+    left: -22px;
+}
+
+.timeline-card {
+    padding: 25px;
+    border: 1px solid #e7edf5;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.timeline-card:hover {
+    transform: translateY(-6px);
+    border-color: #cfe2ff;
+    box-shadow: 0 18px 40px rgba(13, 110, 253, 0.1);
+}
+
+.timeline-subtitle {
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.timeline-card h3 {
+    margin: 7px 0 10px;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.timeline-card p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.timeline-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-top: 18px;
+}
+
+.timeline-left .timeline-technologies {
+    justify-content: flex-end;
+}
+
+.timeline-technologies span {
+    padding: 5px 9px;
+    border-radius: 6px;
+    background: #f1f5fa;
+    color: #495057;
+    font-size: 10px;
+}
+
+
+/* CURRENT FOCUS */
+
+.current-focus {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 35px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #0d6efd, #438fff);
+    color: #ffffff;
+    box-shadow: 0 20px 45px rgba(13, 110, 253, 0.18);
+}
+
+.focus-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.18);
+    font-size: 26px;
+}
+
+.focus-content {
+    flex: 1;
+}
+
+.focus-content > span {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.focus-content h2 {
+    margin: 5px 0;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.focus-content p {
+    max-width: 800px;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+.focus-arrow {
+    font-size: 28px;
+}
+
+
+/* CLOSING */
+
+.growth-section {
+    padding: 70px 0 20px;
+}
+
+.growth-section > span {
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.growth-section h2 {
+    margin-top: 10px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.growth-section h2 strong {
+    color: #0d6efd;
+}
+
+.growth-section p {
+    max-width: 650px;
+    margin: 15px auto 0;
+    color: #6c757d;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .experience-page {
+        padding-top: 100px;
+    }
+
+    .experience-hero {
+        padding-top: 30px;
+    }
+
+    .experience-visual {
+        width: 290px;
+        height: 290px;
+    }
+
+    .timeline-left {
+        padding-right: 40px;
+    }
+
+    .timeline-right {
+        padding-left: 40px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .experience-page {
+        padding-top: 90px;
+    }
+
+    .experience-visual {
+        width: 260px;
+        height: 260px;
+    }
+
+    .experience-icon-main {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .ring-one {
+        width: 170px;
+        height: 170px;
+    }
+
+    .ring-two {
+        width: 240px;
+        height: 240px;
+    }
+
+    .timeline {
+        margin-top: 45px;
+    }
+
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 60px;
+        padding-right: 0;
+        text-align: left;
+    }
+
+    .timeline-left,
+    .timeline-right {
+        padding-left: 60px;
+        padding-right: 0;
+        margin-left: 0;
+        text-align: left;
+    }
+
+    .timeline-number {
+        display: none;
+    }
+
+    .timeline-left .timeline-dot,
+    .timeline-right .timeline-dot {
+        left: -2px;
+        right: auto;
+    }
+
+    .timeline-left .timeline-technologies {
+        justify-content: flex-start;
+    }
+
+    .current-focus {
+        align-items: flex-start;
+        padding: 28px 22px;
+    }
+
+    .focus-arrow {
+        display: none;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .experience-title {
+        font-size: 2.25rem;
+    }
+
+    .journey-points {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .timeline-card {
+        padding: 21px;
+    }
+
+    .growth-section h2 {
+        font-size: 27px;
+    }
+
+}   
+
+/* WORK EXPERIENCE */
+
+.work-experience-section {
+    padding: 60px 0 20px;
+}
+
+.experience-card {
+    display: flex;
+    gap: 25px;
+    margin-top: 40px;
+    padding: 30px;
+    border: 1px solid #e4ebf3;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-6px);
+    border-color: #cfe2ff;
+    box-shadow: 0 18px 40px rgba(13, 110, 253, 0.1);
+}
+
+.experience-card-left {
+    flex-shrink: 0;
+}
+
+.company-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    background: #eaf3ff;
+    color: #0d6efd;
+    font-size: 27px;
+}
+
+.experience-card-content {
+    flex: 1;
+}
+
+.experience-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.experience-status {
+    color: #0d6efd;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+}
+
+.experience-card-content h3 {
+    margin: 5px 0 2px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.experience-card-content h4 {
+    margin: 0;
+    color: #0d6efd;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.experience-duration {
+    flex-shrink: 0;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #f1f5fa;
+    color: #495057;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.experience-card-content > p {
+    max-width: 800px;
+    margin: 20px 0 0;
+    color: #6c757d;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+.experience-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.experience-technologies span {
+    padding: 6px 11px;
+    border-radius: 7px;
+    background: #eaf3ff;
+    color: #0d6efd;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .experience-card {
+        flex-direction: column;
+        padding: 24px;
+    }
+
+    .experience-card-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experience-duration {
+        align-self: flex-start;
+    }
+
+}
